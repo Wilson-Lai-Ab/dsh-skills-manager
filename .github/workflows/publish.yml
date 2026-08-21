@@ -1,0 +1,23 @@
+name: 发布 npm 包
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          package-manager-cache: false
+      # host 测试为零第三方依赖，无需 npm ci；新增运行时依赖时先补 lockfile 再改为 npm ci。
+      - run: npm test
+      - run: npm publish
