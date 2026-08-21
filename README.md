@@ -109,7 +109,7 @@ Use this for debugging or unpublished changes. The cloned directory becomes the 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $OutputEncoding = [System.Text.Encoding]::UTF8
 Set-Location D:\Repository\deepseek-harness-plugin
-git clone https://github.com/MichengAI/dsh-skills-manager.git
+git clone https://github.com/Wilson-Lai-Ab/dsh-skills-manager.git
 Set-Location .\dsh-skills-manager
 npm install
 npm test

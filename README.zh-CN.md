@@ -67,7 +67,7 @@
 从源码安装：
 
 ```text
-请从 https://github.com/MichengAI/dsh-skills-manager 安装 DSH 插件：克隆仓库，执行 npm install 和 npm test，再在该目录执行 dsh plugin --profile web add .。不要只复制 lib。然后执行 dsh --profile web --dump-config，确认已挂载 skills-manager，并提醒我重启 DSH Web 后硬刷新浏览器。
+请从 https://github.com/Wilson-Lai-Ab/dsh-skills-manager 安装 DSH 插件：克隆仓库，执行 npm install 和 npm test，再在该目录执行 dsh plugin --profile web add .。不要只复制 lib。然后执行 dsh --profile web --dump-config，确认已挂载 skills-manager，并提醒我重启 DSH Web 后硬刷新浏览器。
 ```
 
 | 产品 | 怎么用 |
@@ -109,7 +109,7 @@ dsh --profile web --dump-config
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $OutputEncoding = [System.Text.Encoding]::UTF8
 Set-Location D:\Repository\deepseek-harness-plugin
-git clone https://github.com/MichengAI/dsh-skills-manager.git
+git clone https://github.com/Wilson-Lai-Ab/dsh-skills-manager.git
 Set-Location .\dsh-skills-manager
 npm install
 npm test
